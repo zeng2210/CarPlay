@@ -1,0 +1,118 @@
+.monitor-contain {
+  .el-main{
+    max-width: 1404px;
+  }
+  .monitor-aside{
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom: none;
+    .el-menu-item.is-active {
+      background-color: #1d8fe1;
+      color: #ffffff;
+    }
+    .el-menu {
+      border-top: 1px solid #cccccc;
+      li {
+        border-bottom: 1px solid #cccccc;
+      }
+    }
+    >.el-tabs--card{
+      .el-tabs__header{
+        height: 70px;
+        border-bottom: 1px solid #1D8FE1;
+      }
+      .el-tabs__nav{
+        margin-left: 25px;
+        border: none;
+        .el-tabs__item{
+          height: 70px;
+          line-height: 70px;
+          letter-spacing: 2px;
+          color: #5B6C79;
+          border: none ;
+          font-weight: 800;
+          &.is-active{
+            border: 1px solid #1D8FE1;
+            border-top: 4px solid #1D8FE1 ;
+            border-bottom: 1px solid #fff ; 
+            margin-top: 1px;
+            color: #2794E3;
+          }
+        }
+      }
+    }
+  }
+  .all-video-tree{
+    border-top: 1px solid #D8DCDF;
+    .el-tree-node__content{
+      height: 66px;
+      border-bottom: 1px solid #D8DCDF;
+      .el-tree-node__expand-icon{
+        font-size: 16px;
+      }
+    }
+    .is-current{
+      & > .el-tree-node__content{
+        font-size: 14px;
+        font-weight: 800;
+        color: #2492E2;
+        .el-tree-node__expand-icon{
+          font-size: 16px;
+          color: #2492E2;
+        }
+      }
+
+    }
+
+  }
+  .abnormal-event{
+    width: 100%;
+    font-size: 14px;
+    li{
+      color: #6B7A86;
+      height: 40px;
+      line-height: 40px;
+      margin: 0 17px;
+      &:nth-of-type(odd){
+        background: #F5F7F8;
+      }
+      &:nth-of-type(even){
+        background: #fff;
+      }
+      strong{
+        display: inline-block;
+        width: 90px;
+        text-indent: 20px;
+      }
+      i{
+        display: inline-block;
+        margin: 2px 8px;
+        width: 6px;
+        height: 6px;
+        border-radius: 4px;
+        color: #1D8FE1;
+        background: #1D8FE1;
+      }
+      b{
+        display: inline-block;
+        width: 220px;
+        margin: 0 13px;
+      }
+    }
+    li.last-item{
+      cursor: pointer;
+      background: #fff;
+      text-align: right;
+      padding-right: 20px;
+      a{
+        color: #2995E3;
+        &:hover{
+          text-decoration: underline
+        }        
+      }
+    }
+  }
+ .monitorIndex-allVideo{
+   position: relative;
+ }
+}

@@ -1,0 +1,93 @@
+
+import Mock from 'mockjs'
+
+Mock.mock(/record\/new\/list.*/, function () {
+  return {
+    returnList: [{
+      userId: 'lindaiyu',
+      userType: 'owner',
+      recordTime: 1515312478000,
+      position: '酒店前门扑蝶',
+      userName: '林黛玉',
+      recordType: '打闹',
+      imageUrl: 'xxxxxxxxxxxxxxxx'
+    }, {
+      userId: '',
+      recordTime: 1515312478000,
+      position: '酒店后门游泳池边玩水',
+      userName: '薛宝钗',
+      userType: 'visitor',
+      recordType: '玩水',
+      imageUrl: ''
+    }, {
+      userId: '',
+      userType: 'owner',
+      recordTime: 1515312478000,
+      position: '酒店前门扑蝶',
+      userName: '林黛玉',
+      recordType: '打闹',
+      imageUrl: ''
+    }, {
+      userId: 'xuebaochai',
+      recordTime: 1515312478000,
+      position: '酒店后门游泳池边玩水',
+      userName: '薛宝钗',
+      userType: 'visitor',
+      recordType: '玩水',
+      imageUrl: ''
+    }, {
+      userId: 'lindaiyu',
+      userType: 'owner',
+      recordTime: 1515312478000,
+      position: '酒店前门扑蝶',
+      userName: '林黛玉',
+      recordType: '打闹',
+      imageUrl: ''
+    }, {
+      userId: 'xuebaochai',
+      recordTime: 1515312478000,
+      position: '酒店后门游泳池边玩水',
+      userName: '薛宝钗',
+      userType: 'visitor',
+      recordType: '玩水',
+      imageUrl: ''
+    }, {
+      userId: 'lindaiyu',
+      userType: 'owner',
+      recordTime: 1515312478000,
+      position: '酒店前门扑蝶',
+      userName: '林黛玉',
+      recordType: '打闹',
+      imageUrl: ''
+    }, {
+      userId: 'xuebaochai',
+      recordTime: 1515312478000,
+      position: '酒店后门游泳池边玩水',
+      userName: '薛宝钗',
+      userType: 'visitor',
+      recordType: '玩水',
+      imageUrl: ''
+    }, {
+      userId: 'lindaiyu',
+      userType: 'owner',
+      recordTime: 1515312478000,
+      position: '酒店前门扑蝶',
+      userName: '林黛玉',
+      recordType: '打闹',
+      imageUrl: ''
+    }, {
+      userId: 'xuebaochai',
+      recordTime: 1515312478000,
+      position: '酒店后门游泳池边玩水',
+      userName: '薛宝钗',
+      userType: 'visitor',
+      recordType: '玩水',
+      imageUrl: ''
+    }],
+    page: {
+      pageIndex: 1,
+      pageSize: 15,
+      totalCount: 100
+    }
+  }
+})

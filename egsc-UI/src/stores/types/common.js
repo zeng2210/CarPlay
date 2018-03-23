@@ -1,0 +1,1 @@
+export const UPDATE_MAIN_HEIGHT = 'UPDATE_MAIN_HEIGHT'

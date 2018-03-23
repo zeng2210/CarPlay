@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "babel-helpers": "^6.24.1"
+  }
+}

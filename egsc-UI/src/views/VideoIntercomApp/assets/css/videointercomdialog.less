@@ -1,0 +1,245 @@
+/*dialog公共样式*/
+.call {
+  position: absolute;
+  overflow: hidden;
+  .el-dialog{
+    position: relative;
+  }
+  .el-dialog--center {
+    .el-dialog__header {
+      background-image: linear-gradient(-180deg, #ffffff 0%, #f1f4f6 100%);
+      padding: 0px;
+      background-image:linear-gradient(-180deg, #ffffff 0%, #f1f4f6 100%);
+      box-shadow:0 1px 0 0 #d9dce0;
+      border-radius:6px 6px 0 0;
+      padding: 20px 0;
+    }
+  }
+  .el-header,
+  .el-footer {
+    background-color: #b3c0d1;
+    color: #333;
+    text-align: center;
+    position: relative;
+  }
+  
+}
+
+.cellgate-call-contain .play-ocx {
+  display: block;
+  width: 640px;
+  height: 360px;
+  margin: 20px auto 20px auto;
+  object {
+    display: block;
+    width: 100%;
+    height: 360px;
+    margin: 0 auto;
+  }
+  .init-img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 125px auto;
+  }
+}
+.owner-call-contain .play-ocx {
+  display: block;
+  width: 640px;
+  height: 360px;
+  margin: 0px auto 0px auto;
+  object {
+    display: block;
+    width: 100%;
+    height: 360px;
+    margin: 0 auto;
+  }
+  .init-img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 125px auto;
+  }
+  .microphone-icon {
+    margin-top: 110px;
+  }
+}
+/*呼叫记录样式*/
+.call-record {
+  .el-dialog {
+    width: 1160px;
+    .el-dialog__headerbtn {
+      z-index: 99;
+      font-size: 18px;
+      top: 20px;
+    }
+  }
+  .el-dialog__close {
+    font-weight: 700;
+  }
+  .el-dialog__body {
+    padding: 0;
+  }
+}
+
+.el-table__row {
+  .cell {
+    padding-left: 20px;
+  }
+}
+
+.call {
+  /*按钮样式*/
+  .btn {
+    width: 80px;
+    text-align: center;
+  }
+  .btn-jt {
+    background: #0d912c;
+    border-color: #0d912c;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  .btn-unanswer {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  .btn-hb {
+    background: #144ea1;
+    border-color: #144ea1;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 11px;
+  }
+  /* 呼叫记录 */
+  .recored-box {
+    height: 418px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .el-row {
+      height: 70px;
+      line-height: 70px;
+      margin-top: 0;
+      margin-bottom: 0;
+      .el-col:last-child {
+        text-align: right;
+        button {
+          margin-right: 40px;
+        }
+      }
+    }
+    .el-row:nth-child(2n) {
+      background: #f5f7f8;
+    }
+    .content {
+      margin-left: 40px;
+      text-align: left;
+      .spe {
+        color: #f25c1c;
+        padding: 0 3px;
+      }
+    }
+  }
+}
+
+//回拨界面
+.hb-box {
+  .content {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    .microphone-icon {
+      margin: 110px auto;
+    }
+  }
+}
+
+/*对话窗口*/
+.video-detail {
+  .el-dialog__footer{
+    background: rgb(255, 255, 255); 
+    width: 100%; 
+    height: 110px;
+    position: relative; 
+    z-index: 2;
+  }
+  .video-detail-box {
+    position: relative;
+    .dem {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      -webkit-transform: translate(-50%, -25%);
+      transform: translate(-50%, -25%);
+      background: #000000;
+      color: #ffffff;
+      width: 300px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      z-index: 10000;
+    }
+    .demonstration {
+      position: relative;
+      background: #ffffff;
+      color: #000000;
+      line-height: normal;
+      height: auto;
+      bottom: 0px;
+      .icon {
+        display: inline-block;
+        vertical-align: middle;
+        height: 20px;
+        margin-right: 10px;
+      }
+    }
+  }  
+}
+
+.el-dialog {
+  .dialog-footer {
+    padding-bottom: 20px;
+    .block {
+      display: inline-block;
+      margin-left: 30px;
+      &:first-child {
+        margin-left: 0;
+      }
+      .demonstration {
+        display: block;
+        margin-top: 6px;
+        font-size: 14px;
+      }
+    }
+    .hangup {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      padding: 0px;
+      background: url(../images/u3381.png);
+      background-size: 100% 100%;
+      -webkit-background-size: 100% 100%;
+    } 
+    .open-door {
+      width: 50px;
+      height: 50px;
+      border-radius: 0%;
+      border-width: 0;
+      padding: 0px;
+      background: url(../images/u3405.png);
+      background-size: 100% 100%;
+      -webkit-background-size: 100% 100%;
+    }     
+  }
+}
+
+.cellgate-call-contain,.owner-call-contain {
+  .el-dialog__wrapper.call {
+    z-index: 10000 !important;
+  }
+}
+
+
